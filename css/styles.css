@@ -1,3 +1,7 @@
-body {
-  background-color: gold;
+:root {
+  --color-primary : hsl(214, 100%, 57%);
+  --color-secondary: hsl(189, 100%, 50%);
+  --color-accent: hsl(12, 100%, 50%);
+  --color-headings: hsl(253, 86%, 20%);
+  --color-body: hsl(252, 12%, 60%);
 }
