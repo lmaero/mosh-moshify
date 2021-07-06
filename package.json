@@ -1,0 +1,25 @@
+{
+  "name": "moshify",
+  "version": "1.0.0",
+  "description": "Demo website for Moshify Hosting fake company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "moshify",
+    "css",
+    "html",
+    "hosting"
+  ],
+  "author": "Luis Guzman",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4"
+  },
+  "dependencies": {
+    "eslint-plugin-html": "^6.1.2"
+  }
+}
