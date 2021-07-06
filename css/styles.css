@@ -9,6 +9,12 @@
   --color-body: hsl(252, 12%, 60%);
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* TYPOGRAPHY */
 
 html {
@@ -174,4 +180,68 @@ a {
   height: 64px;
   justify-content: center;
   width: 64px;
+}
+
+/* BUTTONS */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn--primary:hover {
+  background-color: hsl(214, 98%, 61%);
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn--secondary:hover {
+  background-color: hsl(189, 100%, 46%);
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn--accent:hover {
+  background-color: hsl(12, 100%, 46%);
+}
+
+.btn--outline {
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid var(--color-headings);
+  color: var(--color-headings);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-headings);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn--block {
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
