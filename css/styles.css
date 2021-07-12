@@ -150,18 +150,19 @@ a {
   margin-right: 2rem;
 }
 
-.list--thick {
+.list--tick {
+  color: var(--color-headings);
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
 }
 
-.list--thick .list__item {
+.list--tick .list__item {
   margin-bottom: 1rem;
   padding-left: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .list--thick .list__item {
+  .list--tick .list__item {
     padding-left: 0;
   }
 }
