@@ -597,7 +597,7 @@ a {
   margin-top: 0;
 }
 
-.collapsible__chevron {
+.collapsible__toggler {
   transform: rotate(-90deg);
   transition: transform 0.3s;
 }
@@ -609,7 +609,7 @@ a {
   transition: all 0.3s;
 }
 
-.collapsible--expanded .collapsible__chevron {
+.collapsible--expanded .collapsible__toggler {
   transform: rotate(0);
 }
 
