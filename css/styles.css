@@ -337,11 +337,19 @@ a {
   color: hsl(0, 0%, 100%);
 }
 
+.card--primary .badge--primary {
+  background-color: hsl(214, 85%, 48%);
+}
+
 .card--secondary .badge--secondary {
   background-color: hsl(189, 98%, 48%);
 }
 
 /* PLANS */
+
+.plan {
+  transition: transform 0.2s ease-out;
+}
 
 .plan__name {
   color: hsl(0, 0%, 100%);
@@ -385,6 +393,10 @@ a {
   width: 40px;
 }
 
+.plan:hover {
+  transform: scale(1.05);
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -396,6 +408,14 @@ a {
 
   .plan__billing-cycle {
     font-size: 1.6rem;
+  }
+
+  .plan--popular {
+    transform: scale(1.1);
+  }
+
+  .plan--popular:hover {
+    transform: scale(1.15);
   }
 }
 
@@ -747,4 +767,15 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* PLANS BLOCK */
+
+.block-plans .grid {
+  gap: 8rem 5rem;
+}
+
+.block-plans .card {
+  margin: 0 auto;
+  max-width: 500px;
 }
