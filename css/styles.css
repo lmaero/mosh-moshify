@@ -20,6 +20,11 @@
 
 /* TYPOGRAPHY */
 
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
 html {
   /* 62.5% of 16px is 10px to make calculations easier*/
   font-size: 62.5%;
@@ -50,6 +55,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 p {
@@ -140,7 +146,6 @@ a {
 /* LISTS */
 
 .list {
-  color: var(--color-headings);
   list-style: none;
   padding-left: 0;
 }
@@ -424,6 +429,7 @@ a {
 
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media__title {
@@ -638,12 +644,12 @@ a {
 }
 
 .block--skewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
 .block--skewed-left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
@@ -717,10 +723,6 @@ a {
 }
 
 /* HERO */
-
-.hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
 
 .hero__tagline {
   color: hsl(213, 19%, 77%);
@@ -803,5 +805,26 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+}
+
+/* SHOWCASE BLOCK */
+
+.block-showcase__picture > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__picture {
+    justify-self: end;
+  }
+
+  .block-showcase__picture > img {
+    max-width: 700px;
+    width: auto;
   }
 }
